@@ -12,9 +12,27 @@
 
 ##### Steps to build project
 
-    # step 2
-
     # step 1 Installing project
-    dotnet new sln -n 'slnfileName'
-    dotnet new webapi -n 'projectname'
-    dotnet sln add 'projectname'
+        dotnet new sln -n 'slnfileName'
+        dotnet new webapi -n 'projectname'
+        dotnet sln add 'projectname'
+
+    # Step 2 Creating DbContext and Model
+        -Creating DbContext file
+        -Creating the Note.cs model file
+
+    # Step 3 Creating migrations,
+        -Sqlite Connextion string in appsettings.Dev...json,
+        -Including it in builder.Services
+
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlite(builder.Configuration.GetConnectionString("Sqlite")));
+
+    # Step 4 Creating database and migrations
+        >> dotnet ef migrations add InitialCreate -o "Data/Migrations"
+        >> dotnet ef database update
+
+    # Step 5 Creating Repo/Services and building the CRUD functions in the Note controller
+        -declaring the service files in program.cs
+
+            builder.Services.AddScoped<INotesServices, NotesServices>();

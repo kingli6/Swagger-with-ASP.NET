@@ -7,7 +7,7 @@ using notes_swaggerApi.Data.Models;
 
 namespace notes_swaggerApi.Services
 {
-    public class NotesServices
+    public class NotesServices : INotesServices
     {
         private AppDbContext _context;
         public NotesServices(AppDbContext context)
