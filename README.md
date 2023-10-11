@@ -31,6 +31,18 @@
 
             builder.Services.AddScoped<INotesServices, NotesServices>();
 
+#### Viewing your API with Swagger
+
+    -locate your localhost web address to view your site
+        a) check your launchSettings.json which is inside you Properties folder
+            "applicationUrl": "https://localhost:7059;http://localhost:5067",   <-- this is mine, yours will be different
+        b) when you start your project with 'dotnet run'
+            you can read the address in the info:
+                info: Microsoft.Hosting.Lifetime[14]
+                Now listening on: http://localhost:5067
+    -To launch Swagger type:
+        http://localhost:5067/swagger/index.html
+
 ##### Build and run the project:
 
     In the terminal, navigate to your project folder and run the following commands to build and run your .NET Web API project:
