@@ -2,6 +2,8 @@
 
 ### Notes
 
+    Here is a simple .NET Core API with Swagger.
+
 ##### Steps to build project
 
     # step 1 Installing project
