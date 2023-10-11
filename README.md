@@ -9,3 +9,12 @@
     cd YourProjectName
     dotnet build
     dotnet run
+
+##### Steps to build project
+
+    # step 2
+
+    # step 1 Installing project
+    dotnet new sln -n 'slnfileName'
+    dotnet new webapi -n 'projectname'
+    dotnet sln add 'projectname'

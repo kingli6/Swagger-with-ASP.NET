@@ -1,6 +1,6 @@
 // using Microsoft.AspNetCore.Mvc;
 
-// namespace notesWebApi.Controllers;
+// namespace notes_swaggerApi.Controllers;
 
 // [ApiController]
 // [Route("[controller]")]
