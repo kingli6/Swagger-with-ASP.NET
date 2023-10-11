@@ -2,14 +2,6 @@
 
 ### Notes
 
-##### Build and Run the Project:
-
-    In the terminal, navigate to your project folder and run the following commands to build and run your .NET Web API project:
-
-    cd YourProjectName
-    dotnet build
-    dotnet run
-
 ##### Steps to build project
 
     # step 1 Installing project
@@ -36,3 +28,15 @@
         -declaring the service files in program.cs
 
             builder.Services.AddScoped<INotesServices, NotesServices>();
+
+##### Build and run the project:
+
+    In the terminal, navigate to your project folder and run the following commands to build and run your .NET Web API project:
+
+    >> cd YourProjectName
+    >> dotnet build
+    >> dotnet run
+
+#### If downloading the Github repo
+
+    Run "dotnet restore" to generate .vscode/obj/bin files...
